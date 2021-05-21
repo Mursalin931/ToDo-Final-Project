@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+    /* background: white; */
+    /* background-size: cover; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans Condensed", sans-serif;
+    /* background-color blur */
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.164);
+    display: flex;
+    /* background-color: white; */
+    width: 700px;
+    height: 500px;
+    position: relative;
+    left: 350px;
+    top: 100px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px solid rgba(0, 0, 0, 0.719);
+}
+
+.container form label {
+    font-family: "Indie Flower", cursive;
+    font-size: 20px;
+    text-shadow: 4px 4px 4px black;
+}
+
+.header {
+    position: absolute;
+    /* margin-top: 10px; */
+    /* left: 260px; */
+    left: 50%;
+    transform: translate(-50%, 40%);
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(79, 236, 6);
+    /* background: #fff; */
+    background: rgba(158, 6, 228, 0.507);
+    text-shadow: 6px 6px 4px rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 4, 255);
+    border-top: 3px solid rgb(255, 0, 0);
+    border-left: 3px solid rgb(0, 255, 42);
+    border-right: 3px solid rgb(6, 134, 240);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(5, 7, 6, 0.37);
+    padding: 5px 15px;
+}
+
+.new-task-container {
+    position: absolute;
+    margin-top: 100px;
+    left: 100px;
+    text-transform: uppercase;
+    border: 1px solid red;
+}
+
+.new-task-container input,
+button,
+label {
+    /* background: #fff; */
+    height: 30px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.new-task-container button {
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgb(37, 245, 10), rgba(0, 0, 255, 0.479));
+    cursor: pointer;
+}
+
+.new-task-container button:active {
+    transform: scale(0.8);
+    transition: transform 0.1s linear;
+}
+
+.new-task-container button:hover {
+    background: linear-gradient(45deg, blue, rgb(255, 65, 65));
+    transition: 0.5s;
+    color: white;
+}
+
+.todo-list-Box {
+    /* display: flex; */
+    position: relative;
+    width: 330px;
+    height: 300px;
+    top: 189px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px;
+    left: 6px;
+    border: 1px solid red;
+    overflow-y: auto;
+}
+
+.todo-list-Box h1 {
+    /* height: 30px; */
+    /* width: 300px; */
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 17, 255);
+    text-shadow: 4px 4px 4px black;
+    margin-bottom: 15px;
+}
+
+.todo-list-Box ul {
+    /* position: absolute; */
+    /* top: 20px; */
+    /* width: 300px; */
+    /* height: 200px; */
+    /* margin-top: 20px; */
+    /* background-color: white; */
+    /* border-radius: 10px; */
+    /* overflow: auto; */
+    width: 98%;
+    /* margin: 15px auto; */
+}
+
+.todo-list-Box ul li {
+    /* margin-left: 20px; */
+    list-style: none;
+    /* width: 264px; */
+    list-style: none;
+    width: 95%;
+    height: 40px;
+    /* margin-top: 5px; */
+    background-color: teal;
+    color: whitesmoke;
+    border-radius: 3px;
+    margin: 5px auto;
+    /* padding-top: 5px; */
+    display: flex;
+}
+
+.todo-list-Box ul li>label {
+    margin-left: 0;
+}
+
+.todo-list-Box ul li input,
+label,
+button {
+    margin: 10px;
+}
+
+.todo-list-Box ul li button {
+    position: absolute;
+    right: 10px;
+    padding: 0px 5px 5px 5px;
+    border-radius: 3px;
+}
+
+.todo-list-Box ul li button:hover {
+    background: springgreen;
+    color: white;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.complete-box {
+    /* display: flex; */
+    position: relative;
+    width: 330px;
+    height: 300px;
+    top: 189px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px;
+    left: 34px;
+    border: 1px solid red;
+    overflow-y: auto;
+}
+
+.complete-box h1 {
+    /* height: 30px; */
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 26, 255);
+    text-shadow: 4px 4px 4px black;
+}
+
+.complete-box ul {
+    /* position: absolute; */
+    /* top: 20px; */
+    width: 98%;
+    /* height: 300px; */
+    /* margin-top: 20px; */
+    /* background-color: white; */
+    /* border-radius: 10px; */
+    margin: 15px auto;
+    /* overflow: auto; */
+}
+
+.complete-box ul li {
+    /* margin-left: 10px; */
+    list-style: none;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    /* margin-top: 5px; */
+    background-color: aqua;
+    border-radius: 3px;
+    margin: 5px auto 0;
+}
+
+.complete-box ul li label {
+    /* line-height: 30px; */
+    width: 200px;
+}
+
+.complete-box ul li button {
+    /* margin-top: 0; */
+    /* margin-left: 0px; */
+    /* position: absolute; */
+    /* right: 10px; */
+    /* padding: 0px 5px 5px 5px; */
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0px;
+    width: 100px;
+    min-width: 100px;
+    height: 40px;
+}
+
+.complete-box ul li button>i {
+    margin-right: 5px;
+    color: aqua;
+    font-size: large;
+    font-weight: bold;
+}
+
+.complete-box ul li button:hover {
+    background: rgb(245, 18, 10);
+    color: white;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+#items-complete-box>li:nth-child(1) {
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    color: wheat;
+    background-color: tomato;
+}
+
+#items-complete-box>li:nth-child(1)>button {
+    visibility: hidden;
+    position: relative;
+}
+
+#items-complete-box>li:nth-child(1)>button>i {
+    display: none;
+}
+
+#items-complete-box>li:nth-child(1)>button::after {
+    content: 'ACTION';
+    pointer-events: none;
+    color: tomato;
+    visibility: visible;
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 40px;
+}
